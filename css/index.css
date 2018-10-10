@@ -133,12 +133,17 @@ body {
     justify-content: space-around;
      align-items: flex-end;
      color: red;
+    
 }
 
 .information-list img {
     display: block;
     height: 65px;
     width: 65px;
+}
+
+.information-facebook {
+        width: 300px;
 }
 
 footer {

@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-
-
-
 body {
     max-width: 1200px;
     margin: auto;
     font-family: 'Pacifico', cursive;
+    padding: 10px;
 }
 
 @media (min-width: 500px) {
-    header > nav {
+    header>nav {
         display: flex;
     }
 }
@@ -19,12 +17,12 @@ body {
     font-size: 2rem;
     margin: 0.5rem;
     text-align: center;
-    
 }
- header {
-     background-color: #e5ecff;
- }
- 
+
+header {
+    background-color: #e5ecff;
+}
+
 .header-nav {
     display: flex;
     justify-content: space-around;
@@ -55,6 +53,7 @@ body {
 }
 
 .banner {
+    /*background-attachment: fixed;*/
     background-image: url('../img/balston-leather-sofa.jpg');
     min-height: 60vh;
     background-size: cover;
@@ -65,14 +64,20 @@ body {
     margin-top: 3%;
 }
 
-@media (min-width: 500px) {
-    .banner {
-        min-height: 400px;
-}
- 
+/*@media (min-width: 500px) {*/
+
+/*    .banner {*/
+
+/*        min-height: 400px;*/
+
+/*    }*/
+
 .product-card {
-    margin: 0px;
-    padding: 0px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
 }
 
 .product-card img {
@@ -103,15 +108,18 @@ body {
     }
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
     .product-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 .used-card {
-    margin: 0px;
-    padding: 0px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
 }
 
 .used-card img {
@@ -129,11 +137,13 @@ body {
     color: black;
 }
 
+.information-list {
+    padding: 10px;
+}
+
 .information-list p {
     justify-content: space-around;
-     align-items: flex-end;
-     color: red;
-    
+    align-items: flex-end;
 }
 
 .information-list img {
@@ -143,15 +153,7 @@ body {
 }
 
 .information-facebook {
-        width: 300px;
-}
-
-footer {
-    display: wrap;
-    justify-content: flex-end;
-   
-    
-    
+    width: 300px;
 }
 
 @media (min-width: 400px) {
@@ -167,46 +169,146 @@ footer {
     }
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
     .used-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.container {
-  position: absolute;
-  top:50%;
-  left:50%;
-  margin-left: -65px;
-  margin-top: -20px;
-  width: 130px;
-  height: 40px;
-  text-align: center;
+/*.container {*/
+
+/*    position: absolute;*/
+
+/*    top: 50%;*/
+
+/*    left: 50%;*/
+
+/*    margin-left: -65px;*/
+
+/*    margin-top: -20px;*/
+
+/*    width: 130px;*/
+
+/*    height: 40px;*/
+
+/*    text-align: center;*/
+
+/*}*/
+
+/*.button-send {*/
+
+/*    outline: none;*/
+
+/*    height: 40px;*/
+
+/*    text-align: center;*/
+
+/*    width: 101px;*/
+
+/*    border-radius: 40px;*/
+
+/*    background: #fff;*/
+
+/*    border: 2px solid yellow;*/
+
+/*    color: black;*/
+
+/*    letter-spacing: 1px;*/
+
+/*    text-shadow: 0;*/
+
+/*    font: {*/
+
+/*        size:12px;*/
+
+/*        weight: bold;*/
+
+/*    }*/
+
+/*}*/
+
+.clock {
+    font-size: 4em;
+    display: flex;
+    justify-content: flex-end;
+    color: #8738ff;
 }
 
-button {
-  outline:none;
-  height: 40px;
-  text-align: center;
-  width: 130px;
-  border-radius:40px;
-  background: #fff;
-  border: 2px solid yellow;
-  color:black;
-  letter-spacing:1px;
-  text-shadow:0;
-  font:{
-    size:12px;
-    weight:bold;
-  }
-}
- .onclic {
-  width: 40px;
-  border-color: gray;
-  border-width:3px;
-  font-size:0;
-  border-left-color: green;
-  animation: rotating 2s 0.25s linear infinite;
+
+.button-up {
+    position: fixed;
+    bottom: 26px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: #ef6b07;
+    z-index: 100;
+    outline: 0;
 }
 
+.btn-up {
+    position: fixed;
+    bottom: 26px;
+    right: 90px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fbdede;
+    background: #3600f9;
+    z-index: 100;
+    outline: 0;
+}
 
+.btn-up:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #ccc;
+    border-left: 4px solid #ccc;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media (max-width:300px) {
+    .btn-up {
+        display: none;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #8e8e8e;
+
+}
+
+.name {
+    margin: 5px;
+}
+
+.surname {
+    margin: 5px;
+}
+
+.email {
+    margin: 5px;
+}
+
+.tel {
+    margin: 5px;
+}
+
+.feedback {
+    margin: 10px;
+}
+
+.button-send  {
+    margin: 10px;
+}

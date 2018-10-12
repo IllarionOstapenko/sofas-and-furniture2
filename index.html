@@ -1,134 +1,160 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sofas and Furniture</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <nav class="header-nav">
-            <a class=header-logo href="index.html">Sofas and Furniture</a>
-            <a href="#new">Нові</a>
-            <a href="#used">Вживані</a>
-            <a href="#information">Інформація</a>
-            <a href="#contact">Зв'язатися</a>
-            <a href="#cart">Корзина</a>
-        </nav>
-        <div class="banner"></div>
-    </header>
-    <main>
-        <h1 id="new">Нові</h1>
-        <div class="product-list">
-            <article class="product-card">
-                <img src="img/black-corner.jpg" alt="Куток чорний">
-                <h4>Куток чорний</h4>
-                <p>М'ягкий шкіряний куток Матеріал:шкіра чорна,ножки металеві Розміри:2,75-1,75 Ціна:$$$</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sofas and Furniture</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <a class=header-logo href="index.html">Sofas and Furniture</a>
+                <a class="smooth" href="#new">Нові</a>
+                <a class="smooth" href="#used">Вживані</a>
+                <a class="smooth" href="#information">Інформація</a>
+                <a class="smooth" href="#contact">Зв'язатися</a>
+                <a class="smooth" href="#cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </nav>
+            <div class="banner"></div>
+            <div class="clock"></div>
+        </header>
+        <main>
+            <h1 id="new">Нові</h1>
+            <div class="product-list">
+                <article class="product-card">
+                    <img src="img/black-corner.jpg" alt="Куток чорний">
+                    <h4>Куток чорний</h4>
+                    <p>М'ягкий шкіряний куток Матеріал:шкіра чорна,ножки металеві Розміри:2,75-1,75 Ціна:$$$</p>
+                    <div class="button-container">
+                        <button type="button" class="btn btn-warning">Інформація</button>
+                        <button type="button" class="btn btn-outline-primary">Купити</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/black-sofa.jpg" alt="Чорний диван">
+                    <h4>Чорний диван</h4>
+                    <p>М'ягкий шкіряний 3-ох особовий диван Матеріал:шкіра чорна,ножки дерев'яні Ціна:$$$</p>
+                    <div class="button-container">
+                        <button type="button" class="btn btn-warning">Інформація</button>
+                        <button type="button" class="btn btn-outline-primary">Купити</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="img/white-corner.jpg" alt="Куток білий">
+                    <h4>Куток білий</h4>
+                    <p>М'ягкий шкіряний кутокМатеріал:шкіра біла,ножки металеві Ціна:$$$</p>
+                    <div class="button-container">
+                        <button type="button" class="btn btn-warning">Інформація</button>
+                        <button type="button" class="btn btn-outline-primary">Купити</button>
+                    </div>
+                </article>
+                <!--<article class="product-card">-->
+                <!--    <img src="img/white-sofa.jpg" alt="Диван білий">-->
+                <!--    <h4>Диван білий</h4>-->
+                <!--    <p>М'ягкий шкіряний 3-ох особовий диван Recliner Матеріал:шкіра біла,ножки металеві Ціна:$$$</p>-->
+                <!--    <div class="button-container">-->
+                <!--        <button type="button" class="btn btn-warning">Інформація</button>-->
+                <!--        <button type="button" class="btn btn-outline-primary">Купити</button>-->
+                <!--    </div>-->
+                <!--</article>-->
+            </div>
+        </main>
+        <h2 id="used">Вживані</h2>
+        <div class="used-list">
+            <article class="used-card">
+                <img src="img/used-black-corner.jpg" alt="Вживаний чорний куток">
+                <h4>Чорний куток</h4>
+                <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
                 <div class="button-container">
-                    <button>Читати більше</button>
-                    <button>Купити</button>
+                    <button type="button" class="btn btn-warning">Інформація</button>
+                    <button type="button" class="btn btn-outline-primary">Купити</button>
                 </div>
             </article>
-            <article class="product-card">
-                <img src="img/black-sofa.jpg" alt="Чорний диван">
-                <h4>Чорний диван</h4>
-                <p>М'ягкий шкіряний 3-ох особовий диван Матеріал:шкіра чорна,ножки дерев'яні Ціна:$$$</p>
+            <article class="used-card">
+                <img src="img/used-brown-corner.jpg" alt="Вживаний чорний куток">
+                <h4>Коричневий куток</h4>
+                <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
                 <div class="button-container">
-                    <button>Читати більше</button>
-                    <button>Купити</button>
+                    <button type="button" class="btn btn-warning">Інформація</button>
+                    <button type="button" class="btn btn-outline-primary">Купити</button>
                 </div>
             </article>
-            <article class="product-card">
-                <img src="img/white-corner.jpg" alt="Куток білий">
-                <h4>Куток білий</h4>
-                <p>М'ягкий шкіряний кутокМатеріал:шкіра біла,ножки металеві Ціна:$$$</p>
+            <article class="used-card">
+                <img src="img/used-white-corner.jpg" alt="Вживаний чорний куток">
+                <h4>Білий куток</h4>
+                <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
                 <div class="button-container">
-                    <button>Читати більше</button>
-                    <button>Купити</button>
-                </div>
-            </article>
-            <article class="product-card">
-                <img src="img/white-sofa.jpg" alt="Диван білий">
-                <h4>Диван білий</h4>
-                <p>М'ягкий шкіряний 3-ох особовий диван Recliner Матеріал:шкіра біла,ножки металеві Ціна:$$$</p>
-                <div class="button-container">
-                    <button>Читати більше</button>
-                    <button>Купити</button>
+                    <button type="button" class="btn btn-warning">Інформація</button>
+                    <button type="button" class="btn btn-outline-primary">Купити</button>
                 </div>
             </article>
         </div>
-    </main>
-    <h2 id="used">Вживані</h2>
-    <div class="used-list">
-        <article class="used-card">
-            <img src="img/used-black-corner.jpg" alt="Вживаний чорний куток">
-            <h4>Чорний куток</h4>
-            <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
-            <div class="button-container">
-            <button>Читати більше</button>
-            <button>Купити</button>
+        <h3 id="information">Інформація</h3>
+        <div class="information-list">
+            <img src="img/phone.png" alt="Телефон">
+            <p>+380-50-50-05-505</p>
+            <div class="information-list">
+                <img src="img/email.jpg" alt="Поштова адреса">
+                <p>ostapenko_illarion@ukr.net</p>
+                <div class="information-facebook">
+                    <a href="https://www.facebook.com/ostapenko.illarion">
+                        <img src="img/facebook.png" alt="Фейсбук">
+                        <p>www.facebook.com/ostapenko.illarion</p>
+                    </a>
+                </div>
             </div>
-        </article>
-        <article class="used-card">
-            <img src="img/used-brown-corner.jpg" alt="Вживаний чорний куток">
-            <h4>Коричневий куток</h4>
-            <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
-            <div class="button-container">
-            <button>Читати більше</button>
-            <button>Купити</button>
-            </div>
-        </article>
-        <article class="used-card">
-            <img src="img/used-white-corner.jpg" alt="Вживаний чорний куток">
-            <h4>Білий куток</h4>
-            <p>Чорний куток в ідеальному стані з дерев'яними ножками Ціна:$$$</p>
-            <div class="button-container">
-            <button>Читати більше</button>
-            <button>Купити</button>
-            </div>
-        </article>
-    </div>
-<h3 id="information">Інформація</h3>
-<div class="information-list">
-    <img src="img/phone.png" alt="Телефон">
-    <p>+380-50-50-05-505</p>
-    <div class="information-list">
-        <img src="img/email.jpg" alt="Поштова адреса">
-        <p>ostapenko_illarion@ukr.net</p>
-        <div class="information-facebook">
-             <a href="https://www.facebook.com/ostapenko.illarion">
-                 <img src="img/facebook.png" alt="Фейсбук">
-                 <p>https://www.facebook.com/ostapenko.illarion</p>
-             </a>
         </div>
-    </div>
-</div>
-<h3 id="contact">Зв'язатися</h3>
-<form action="https://formspree.io/ostapenko_illarion@ukr.net" method="POST">
-    <label class="name">Ім'я</label>
-    <input class="name" type="text">
-    <label class="surname">Прізвище</label>
-    <input class="surname" name="surname" type="text">
-    <label class="email">E-mail</label>
-    <input class="email" name="email" type="text">
-    <label class="tel">Номер мобільного</label>
-    <input class="tel" name="phone number" type="text">
-    <button class="button">Надіслати</button>
-</form>
-<footer>
-    <p>© 2018 all rights reserved</p>
-    <p>Illarion Ostapenko</p>
-</footer>
-</body>
+        <h3 id="contact">Зв'язатися</h3>
+        <form action="https://formspree.io/ostapenko_illarion@ukr.net" method="POST">
+            <table class="feedback">
+                <tr>
+                    <th>
+                        <input class="name" type="text" placeholder="Ім'я">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input class="surname" name="surname" type="text" placeholder="Прізвище">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input class="email" name="email" type="text" placeholder="E-mail">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input class="tel" name="phone number" type="text" placeholder="Номер мобільного">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <!--<button class="button-send">Надіслати</button>-->
+                         <button type="button"  class="button-send btn btn-outline-secondary ">Надіслати</button>
+                    </th>
+                </tr>
+               
+            </table>
+        </form>
+        <footer class="footer">
+            <br>
+            © 2018 all rights reserved
+            <br>Illarion Ostapenko
+        
+        </footer>
+        <button class="btn-up"></button>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
-
-
-
-  <!--<input class="submit" value="Надіслати">-->
-    
-    
-  <!--<button class="button-massage" value="send"></button>-->
-  
